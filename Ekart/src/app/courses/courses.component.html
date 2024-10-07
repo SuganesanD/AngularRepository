@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h6>Courses</h6>
+    <div class="courses-container"> 
+        <div class="course">
+            <h4>Introduction to Data Structures and Algorithms</h4>
+            <button (click)="clickedbtn1()">{{value1}}</button>
+          
+        </div>
+        <div class="course">
+            <h4>Web Development Bootcamp: HTML, CSS, and JavaScript</h4>
+            <button  (click)="clickedbtn2()">{{value2}}</button>
+           
+        </div>
+        <div class="course">
+            <h4>Full Stack Development with Node.js and React</h4>
+            <button (click)="clickedbtn3()">{{value3}}</button>
+            
+
+        </div>
+        <div class="course">
+            <h4>Machine Learning: A Comprehensive Guide</h4>
+            <button (click)="clickedbtn4()">{{value4}}</button>
+       
+        </div>
+        <div class="course">
+            <h4>Mobile App Development with Flutter</h4>
+            <button (click)="clickedbtn5()">{{value5}}</button>
+           
+        </div>
+        <div class="course">
+            <h4>Cybersecurity Fundamentals: Protecting Your Digital World</h4>
+            <button (click)="clickedbtn6()">{{value6}}</button>
+        </div>
+        <div class="totalcourses">
+        <button>Total Courses added To Cart {{totalvalue}} </button>    
+        </div>
+    </div>
+
+
 </body>
+
 </html>

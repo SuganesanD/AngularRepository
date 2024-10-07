@@ -1,0 +1,89 @@
+h6{
+    font-size: 50px;
+    margin-left: 52px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.courses-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    margin: 0;
+   
+}
+
+.course{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    border: 1px solid rgb(216, 214, 214);
+    border-radius: 10px;
+    height: auto;
+    padding: 0px 20px ;
+    width: 25%; 
+}
+.course:hover{
+    border: 1px solid rgb(98, 190, 98);
+    box-shadow: 1px 3px 5px 1px rgb(197, 197, 197);
+}
+
+.course button:hover {
+    height: 40%;
+    width: 30%;
+    align-content: center;
+    background-color: white;
+    color:  rgb(98, 190, 98);
+    border: 1px solid rgb(98, 190, 98);  
+     
+}
+
+.course button {
+    height: 40%;
+    width: 30%;
+    align-content: center;
+    background-color: rgb(98, 190, 98);
+    color: white;
+    border: none;  
+     
+}
+
+.course h4{
+    width: 50%;
+}
+
+.course .pdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(216, 214, 214);
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+}
+
+.totalcourses{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.totalcourses button{
+    background-color: white;
+    color: tomato;
+    border: 1px solid tomato;
+    padding: 10px;
+    font-size: 30px;
+    width: 40%;
+
+}
+
+.totalcourses button:hover{
+    background-color: tomato;
+    color: white;
+
+}
