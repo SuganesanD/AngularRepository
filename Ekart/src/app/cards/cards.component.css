@@ -1,0 +1,88 @@
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+    
+}
+
+.card{
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 270px;
+    transition: ease 0.3s;
+    
+}
+
+.card:hover{
+    box-shadow: 2px 2px 5px 1px rgb(197, 196, 196);
+    transition: ease 0.3s;
+}
+ .card-img{
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+    border-radius: 9px 9px 0px 0px;
+}
+
+.card .card-img h4{
+    color: white;
+    font-size: 20px;
+    margin-top: 70px;
+
+}
+
+
+
+.rating{
+    height: 20px;
+    width: 50px;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+.rating img{
+    height: 60%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.card .card-img .rating p{
+    font-size: 10px;
+    opacity:1;
+    margin: 0;
+    color: white;
+}
+
+.card  p {
+    margin: 15px;
+}
+
+.card h4{
+    margin: 15px;
+    
+}
+
+.buttondiv{
+    background-color: tomato;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin: 15px;
+}
