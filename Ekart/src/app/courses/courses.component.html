@@ -18,7 +18,7 @@
         </div>
         <div class="course">
             <h4>{{courses[1]}}</h4>
-            <button  [ngClass]="{'buttontrue': btnval2,'buttonfal': !btnval2}" (click)="clickedbtn2()">{{value2}}</button>
+            <button [ngClass]="{'buttontrue': btnval2,'buttonfal': !btnval2}" (click)="clickedbtn2()">{{value2}}</button>
            
         </div>
         <div class="course">
@@ -34,7 +34,7 @@
         </div>
         <div class="course">
             <h4>{{courses[4]}}</h4>
-            <button  [ngClass]="{'buttontrue': btnval5,'buttonfal': !btnval5}" (click)="clickedbtn5()">{{value5}}</button>
+            <button [ngClass]="{'buttontrue': btnval5,'buttonfal': !btnval5}" (click)="clickedbtn5()">{{value5}}</button>
            
         </div>
         <div class="course">   
@@ -45,10 +45,11 @@
         <button>Total Courses added To Cart {{totalvalue}} </button>    
         </div>
 
-        <!--<div  *ngFor="let course of courses">
-            <h4>{{course}}</h4>
-            <button (click)="clickedbtn5()">{{value}}</button>
+        <!--<div class="course" *ngFor="let course of courses">
+            <h4>{{id.course}}</h4>
+            <button (click)="clickedbuttonn(object[0])">{{id.value}}</button>
         </div>-->
+
     </div>
 </body>
 

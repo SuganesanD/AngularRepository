@@ -32,6 +32,8 @@ export class CoursesComponent {
 
   courses:string[]=["Introduction to Data Structures and Algorithms","Web Development Bootcamp: HTML, CSS, and JavaScript","Full Stack Development with Node.js and React","Machine Learning: A Comprehensive Guide","Mobile App Development with Flutter","Cybersecurity Fundamentals: Protecting Your Digital World",]
   values:string[]=["Add To Cart","Remove"]
+  itemslist:string[]=["abi","thirisha"]
+  
   clickedbtn1(){
     if(this.initialval1==0){
     this.initialval1++
@@ -122,6 +124,4 @@ export class CoursesComponent {
     this.btnval6=! this.btnval6
   }
   }
-
-
 }
