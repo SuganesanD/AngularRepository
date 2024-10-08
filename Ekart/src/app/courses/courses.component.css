@@ -26,11 +26,13 @@ h6{
     width: 25%; 
 }
 .course:hover{
+    cursor: pointer;
     border: 1px solid rgb(98, 190, 98);
     box-shadow: 1px 3px 5px 1px rgb(197, 197, 197);
 }
 
-.course button:hover {
+.course .buttonfalse {
+    cursor: pointer;
     height: 40%;
     width: 30%;
     align-content: center;
@@ -40,7 +42,7 @@ h6{
      
 }
 
-.course button {
+.course .buttontrue {
     height: 40%;
     width: 30%;
     align-content: center;
@@ -49,6 +51,18 @@ h6{
     border: none;  
      
 }
+
+.course .buttonfal {
+    height: 40%;
+    width: 30%;
+    align-content: center;
+    background-color: rgb(221, 68, 76);
+    color: white;
+    border: none;  
+     
+}
+
+
 
 .course h4{
     width: 50%;
@@ -73,6 +87,7 @@ h6{
 }
 
 .totalcourses button{
+    
     background-color: white;
     color: tomato;
     border: 1px solid tomato;
@@ -83,6 +98,7 @@ h6{
 }
 
 .totalcourses button:hover{
+    cursor: pointer;
     background-color: tomato;
     color: white;
 

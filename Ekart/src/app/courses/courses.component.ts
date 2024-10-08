@@ -23,16 +23,28 @@ export class CoursesComponent {
 
   totalvalue:number=0
 
+  btnval1:boolean=true
+  btnval2:boolean=true
+  btnval3:boolean=true
+  btnval4:boolean=true
+  btnval5:boolean=true
+  btnval6:boolean=true
+
+  courses:string[]=["Introduction to Data Structures and Algorithms","Web Development Bootcamp: HTML, CSS, and JavaScript","Full Stack Development with Node.js and React","Machine Learning: A Comprehensive Guide","Mobile App Development with Flutter","Cybersecurity Fundamentals: Protecting Your Digital World",]
+  values:string[]=["Add To Cart","Remove"]
   clickedbtn1(){
     if(this.initialval1==0){
     this.initialval1++
     this.totalvalue+=this.initialval1
-    this.value1="Remove"
+    this.value1=this.values[1]
+    this.btnval1=! this.btnval1
   }
   else{
     this.initialval1--
-    this.value1="Add To Cart"
+    this.value1=this.values[0]
     this.totalvalue-=1
+    this.btnval1=! this.btnval1
+    
   }
   }
 
@@ -41,11 +53,13 @@ export class CoursesComponent {
     this.initialval2++
     this.value2="Remove"
     this.totalvalue+=this.initialval2
+    this.btnval2=! this.btnval2
   }
   else{
     this.initialval2--
     this.value2="Add To Cart"
     this.totalvalue-=1
+    this.btnval2=! this.btnval2
   }
   }
 
@@ -54,11 +68,13 @@ export class CoursesComponent {
     this.initialval3++
     this.value3="Remove"
     this.totalvalue+=this.initialval3
+    this.btnval3=! this.btnval3
   }
   else{
     this.initialval3--
     this.value3="Add To Cart"
     this.totalvalue-=1
+    this.btnval3=! this.btnval3
   }
   }
 
@@ -67,11 +83,13 @@ export class CoursesComponent {
     this.initialval4++
     this.value4="Remove"
     this.totalvalue+=this.initialval4
+    this.btnval4=! this.btnval4
   }
   else{
     this.initialval4--
     this.value4="Add To Cart"
     this.totalvalue-=1
+    this.btnval4=! this.btnval4
   }
   }
 
@@ -80,11 +98,13 @@ export class CoursesComponent {
     this.initialval5++
     this.value5="Remove"
     this.totalvalue+=this.initialval5
+    this.btnval5=! this.btnval5
   }
   else{
     this.initialval5--
     this.value5="Add To Cart"
     this.totalvalue-=1
+    this.btnval5=! this.btnval5
   }
   }
 
@@ -93,11 +113,13 @@ export class CoursesComponent {
     this.initialval6++
     this.value6="Remove"
     this.totalvalue+=this.initialval6
+    this.btnval6=! this.btnval6
   }
   else{
     this.initialval6--
     this.value6="Add To Cart"
     this.totalvalue-=1
+    this.btnval6=! this.btnval6
   }
   }
 

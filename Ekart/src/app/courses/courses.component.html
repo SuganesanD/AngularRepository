@@ -11,41 +11,45 @@
     <h6>Courses</h6>
     <div class="courses-container"> 
         <div class="course">
-            <h4>Introduction to Data Structures and Algorithms</h4>
-            <button (click)="clickedbtn1()">{{value1}}</button>
-          
+            <h4>{{courses[0]}}</h4>
+           <button [ngClass]="{'buttontrue': btnval1,'buttonfal': !btnval1}" (click)="clickedbtn1()">
+            {{value1}}
+           </button>   
         </div>
         <div class="course">
-            <h4>Web Development Bootcamp: HTML, CSS, and JavaScript</h4>
-            <button  (click)="clickedbtn2()">{{value2}}</button>
+            <h4>{{courses[1]}}</h4>
+            <button  [ngClass]="{'buttontrue': btnval2,'buttonfal': !btnval2}" (click)="clickedbtn2()">{{value2}}</button>
            
         </div>
         <div class="course">
-            <h4>Full Stack Development with Node.js and React</h4>
-            <button (click)="clickedbtn3()">{{value3}}</button>
+            <h4>{{courses[2]}}</h4>
+            <button  [ngClass]="{'buttontrue': btnval3,'buttonfal': !btnval3}" (click)="clickedbtn3()">{{value3}}</button>
             
 
         </div>
         <div class="course">
-            <h4>Machine Learning: A Comprehensive Guide</h4>
-            <button (click)="clickedbtn4()">{{value4}}</button>
+            <h4>{{courses[3]}}</h4>
+            <button [ngClass]="{'buttontrue': btnval4,'buttonfal': !btnval4}"  (click)="clickedbtn4()">{{value4}}</button>
        
         </div>
         <div class="course">
-            <h4>Mobile App Development with Flutter</h4>
-            <button (click)="clickedbtn5()">{{value5}}</button>
+            <h4>{{courses[4]}}</h4>
+            <button  [ngClass]="{'buttontrue': btnval5,'buttonfal': !btnval5}" (click)="clickedbtn5()">{{value5}}</button>
            
         </div>
-        <div class="course">
-            <h4>Cybersecurity Fundamentals: Protecting Your Digital World</h4>
-            <button (click)="clickedbtn6()">{{value6}}</button>
+        <div class="course">   
+            <h4>{{courses[5]}}</h4>
+            <button  [ngClass]="{'buttontrue': btnval6,'buttonfal': !btnval6}" (click)="clickedbtn6()">{{value6}}</button>
         </div>
         <div class="totalcourses">
         <button>Total Courses added To Cart {{totalvalue}} </button>    
         </div>
+
+        <!--<div  *ngFor="let course of courses">
+            <h4>{{course}}</h4>
+            <button (click)="clickedbtn5()">{{value}}</button>
+        </div>-->
     </div>
-
-
 </body>
 
 </html>
