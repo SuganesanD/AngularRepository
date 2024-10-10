@@ -26,5 +26,6 @@
 
 .roller p:hover{
     color:  rgb(98, 190, 98);
+    cursor: pointer;
 
 }
