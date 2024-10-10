@@ -112,3 +112,8 @@
 .footer7 h4{
     color: rgb(6, 180, 99);
 }
+
+ul li:hover{
+    color: green;
+    cursor: pointer;
+}

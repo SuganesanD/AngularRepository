@@ -1,0 +1,45 @@
+.subscription-yearly{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid rgb(192, 127, 0);
+    width: 100%;
+    height: 300px;
+
+}
+
+
+.subscription-yearly p img{
+    margin: 0;
+    padding: 0;
+}
+.subscription-yearly p {
+    font-size: 14px;
+}
+
+.subscription-yearly img {
+   height: 15px;
+   margin-right: 10px;
+}
+
+.benefit{
+    display: flex;
+    align-items: center;
+    height: 12%;
+    margin:0px  10px ;
+}
+.subscription-yearly button{
+    background-color: white;
+    color:  rgb(192, 127, 0);
+    border: 1px solid  rgb(192, 127, 0);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;  
+    margin: 10px;
+
+}
+.subscription-yearly button:hover{
+    background-color: rgb(192, 127, 0);
+    color: white;
+    
+}

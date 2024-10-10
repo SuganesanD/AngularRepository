@@ -31,16 +31,7 @@ h6{
     box-shadow: 1px 3px 5px 1px rgb(197, 197, 197);
 }
 
-.course .buttonfalse {
-    cursor: pointer;
-    height: 40%;
-    width: 30%;
-    align-content: center;
-    background-color: white;
-    color:  rgb(98, 190, 98);
-    border: 1px solid rgb(98, 190, 98);  
-     
-}
+
 
 .course .buttontrue {
     height: 40%;

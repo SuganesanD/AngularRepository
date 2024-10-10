@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    overflow-x: hidden;
 }
 .nav-container{
     margin: 0;
@@ -10,9 +9,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 100%;
-    border: 1px solid rgb(194, 194, 194);
+    height: 60px;
+    width: 99.8%;
+    border: 0.1px solid rgb(194, 194, 194); 
     background-color: white;
 }
 

@@ -1,3 +1,8 @@
+.body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 .roller-container{
     display: flex;
     align-items: center;

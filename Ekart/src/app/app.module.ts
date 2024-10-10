@@ -9,6 +9,10 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { CardsComponent } from './cards/cards.component';
 import { FooterComponent } from './footer/footer.component';
 import { CoursesComponent } from './courses/courses.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { SubscriptionQuartelyComponent } from './subscription/subscription-quartely/subscription-quartely.component';
+import { SubscriptionMonthlyComponent } from './subscription/subscription-monthly/subscription-monthly.component';
+import { SubscriptionYearlyComponent } from './subscription/subscription-yearly/subscription-yearly.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { CoursesComponent } from './courses/courses.component';
     MainContentComponent,
     CardsComponent,
     FooterComponent,
-    CoursesComponent
+    CoursesComponent,
+    SubscriptionComponent,
+    SubscriptionQuartelyComponent,
+    SubscriptionMonthlyComponent,
+    SubscriptionYearlyComponent
   ],
   imports: [
     BrowserModule,
