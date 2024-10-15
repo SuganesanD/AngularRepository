@@ -1,0 +1,41 @@
+.form1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+.formdiv{
+    border: 1px Solid rgb(196, 194, 194);
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.forms input{
+    width: 80%;
+    padding: 0;
+    border: none;
+    height: 50%;
+    border: 1px Solid rgb(196, 194, 194);
+    height: 30px;
+    padding-left: 20px;
+}
+
+.forms button{
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+
+}

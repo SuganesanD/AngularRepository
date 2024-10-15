@@ -13,6 +13,8 @@ import { SubscriptionComponent } from './subscription/subscription.component';
 import { SubscriptionQuartelyComponent } from './subscription/subscription-quartely/subscription-quartely.component';
 import { SubscriptionMonthlyComponent } from './subscription/subscription-monthly/subscription-monthly.component';
 import { SubscriptionYearlyComponent } from './subscription/subscription-yearly/subscription-yearly.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { SubscriptionYearlyComponent } from './subscription/subscription-yearly/
     SubscriptionComponent,
     SubscriptionQuartelyComponent,
     SubscriptionMonthlyComponent,
-    SubscriptionYearlyComponent
+    SubscriptionYearlyComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
