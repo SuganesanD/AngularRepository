@@ -6,6 +6,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./forms.component.css']
 })
 export class FormsComponent {
+
+    Username:string=""
+
+
+  
   click(){
     alert("Submitted!!!👍👍👍")
   }
