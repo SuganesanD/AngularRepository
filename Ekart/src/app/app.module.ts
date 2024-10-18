@@ -15,6 +15,9 @@ import { SubscriptionMonthlyComponent } from './subscription/subscription-monthl
 import { SubscriptionYearlyComponent } from './subscription/subscription-yearly/subscription-yearly.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { FormsModule } from '@angular/forms';
     SubscriptionQuartelyComponent,
     SubscriptionMonthlyComponent,
     SubscriptionYearlyComponent,
-    FormsComponent
+    FormsComponent,
+    SearchComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,

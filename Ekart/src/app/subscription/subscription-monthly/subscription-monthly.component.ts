@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { subscriptionClass } from 'src/app/subscription/services/subscription.service';
+import { subscriptionClass } from 'src/app/services/subscription.service';
 
 @Component({
   selector: 'app-subscription-monthly',

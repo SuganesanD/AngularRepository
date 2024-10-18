@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./subscription.component.css']
 })
 export class SubscriptionComponent {
-  subscriptionClicked(){
-  }
+  
 
 }
