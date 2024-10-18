@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="searchbox">
+        <input type="text" placeholder="Search any Courses" [(ngModel)]="searchValue">
+    </div>
+    <div class="search-container">
+        <div class="searchcard-for" *ngFor="let searchitem of search; let i=index" >
+            <div class="searchcard-if" *ngIf="searchitem.includes(searchValue) && (searchValue.length!=0)">
+                <p>{{searchitem}}</p>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
