@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body><div class="cl">
+    <div class="outer">
+        <img src="assets/images/tick_animation.gif"  alt="" id="tick">
+        <div class="inner1" [ngClass]="{inner:true ,inner1false:state}">
+           <img src="assets/images/camera.jpg" alt=""> 
+        </div>
+        <div class="inner2">
+            <form>
+                <p>Username or email</p>
+                <input type="text|email">
+                <p>Password</p>
+                <input type="password">
+                <button  (click)="slideeffect()">Sign in</button>
+            </form>
+            
+            <!-- <a>forget password?</a>
+            <p>___________ </p> 
+            <p>or</p>
+            <p>___________</p> -->
+            <div class="googleclass">
+                <img src="assets\images\google.png" alt="googlelogo">
+                <p>Sign in with Google</p>
+            </div>
+            <p>are you new?<a href="">Create an account</a></p>
+            
+            
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

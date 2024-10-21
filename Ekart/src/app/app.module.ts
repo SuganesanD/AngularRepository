@@ -17,6 +17,7 @@ import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
     SubscriptionYearlyComponent,
     FormsComponent,
     SearchComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
