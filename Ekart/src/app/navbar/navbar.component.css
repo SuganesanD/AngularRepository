@@ -55,6 +55,7 @@ body{
 .list img{
     margin-right: 20px;
     margin-left: 5px;
+    transition: ease 0.3s;
     
 }
 
