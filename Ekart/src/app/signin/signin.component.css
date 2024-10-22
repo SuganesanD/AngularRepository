@@ -1,36 +1,38 @@
 body{
-    background-color: rgb(229, 252, 229);
-    height: 100vh;
     display: flex;
     justify-content:  center;
     align-items: center;
+
     overflow-x: hidden;
     font-family: "roboto" ,sans-serif;
     font-size: 14px;
+    height: 100vh;
 }
-.cl{
-    background-color: rgb(88, 177, 88);
+
+/* .cl{
+    background-color: rgb(135, 170, 135);
     height: 550px;
     width: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-}
+} */
 .outer {
     height: 500px;
     width: 600px;
-    border: 1px solid black;
+    border: 1px solid rgb(211, 210, 210);
     display: flex;
     position: relative;
+
 
 }
 #tick{
     position: absolute;
     top: 225px;
     left: 25%;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
 }
 .inner1 {
     height: 500px;
@@ -55,7 +57,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(236, 252, 234);
+    background-color: white;
 }
 .inner1false {
     margin-left: 300px;

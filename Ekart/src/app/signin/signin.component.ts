@@ -9,8 +9,7 @@ export class SigninComponent {
   state:boolean=false
   slideeffect(){
     this.state=true
-
-
   }
+
 
 }

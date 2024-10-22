@@ -7,35 +7,38 @@
     <title>Document</title>
 </head>
 
-<body><div class="cl">
-    <div class="outer">
-        <img src="assets/images/tick_animation.gif"  alt="" id="tick">
-        <div class="inner1" [ngClass]="{inner:true ,inner1false:state}">
-           <img src="assets/images/camera.jpg" alt=""> 
-        </div>
-        <div class="inner2">
-            <form>
-                <p>Username or email</p>
-                <input type="text|email">
-                <p>Password</p>
-                <input type="password">
-                <button  (click)="slideeffect()">Sign in</button>
-            </form>
-            
-            <!-- <a>forget password?</a>
+<body>
+    
+        <div class="outer">
+            <img src="assets/images/tick_animation.gif" alt="" id="tick">
+            <div class="inner1" [ngClass]="{inner:true ,inner1false:state}">
+                <img src="assets/images/camera.jpg" alt="">
+            </div>
+            <div class="inner2">
+                <form>
+                    <p>Username or email</p>
+                    <input type="text|email">
+                    <p>Password</p>
+                    <input type="password">
+                    <button (click)="slideeffect()">Sign in</button>
+                </form>
+
+                <!-- <a>forget password?</a>
             <p>___________ </p> 
             <p>or</p>
             <p>___________</p> -->
-            <div class="googleclass">
-                <img src="assets\images\google.png" alt="googlelogo">
-                <p>Sign in with Google</p>
+                <p>or</p>
+                <a
+                    href="https://www.google.com/search?q=google&sca_esv=546aec7a0f9e1974&rlz=1C1YTUH_enIN1126IN1127&ei=gEwXZ56RNoma4-EP9P6Z0Ag&ved=0ahUKEwie0eaYtKGJAxUJzTgGHXR_BooQ4dUDCA8&uact=5&oq=google&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdvb2dsZTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIREC4YgAQYsQMY0QMYgwEYxwEyChAAGIAEGEMYigUyChAAGIAEGEMYigUyCxAAGIAEGLEDGIMBMggQABiABBixAzIKEAAYgAQYQxiKBTILEAAYgAQYsQMYigUyCBAAGIAEGLEDSL8WUJEDWIQUcAV4AZABA5gBf6AB2wqqAQQwLjEyuAEDyAEA-AEBmAIJoAK0BKgCFMICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgINEAAYgAQYsQMYQxiKBcICBRAAGIAEwgITEAAYgAQYQxi0AhiKBRjqAtgBAcICFhAAGAMYtAIY5QIY6gIYjAMYjwHYAQLCAhYQLhgDGLQCGOUCGOoCGIwDGI8B2AECwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICEBAAGIAEGLEDGEMYgwEYigWYAwmIBgGQBgq6BgQIARgHugYGCAIQARgKkgcDNS40oAe9Uw&sclient=gws-wiz-serp">
+                    <div class="googleclass">
+                        <img src="assets\images\google.png" alt="googlelogo">
+                        <p>Sign in with Google</p>
+                    </div>
+                </a>
+                <p>Are you new? <a href="">Create an account</a></p>
             </div>
-            <p>are you new?<a href="">Create an account</a></p>
-            
-            
         </div>
-    </div>
-</div>
+
 </body>
 
 </html>
