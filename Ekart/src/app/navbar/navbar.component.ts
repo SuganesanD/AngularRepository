@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  darkstate:number=0
+  darkbool:boolean=false
+  darktheme(){
+    this.darkstate++
+    if(this.darkstate==1){
+      this.darkbool=true
+    }
+
+  }
 
 }

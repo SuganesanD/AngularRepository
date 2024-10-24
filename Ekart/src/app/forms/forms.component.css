@@ -1,15 +1,22 @@
+h6{
+    font-size: 50px;
+    margin-left: 52px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
 .form1{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
+    margin: 0;
 
 }
 .formdiv{
     border: 1px Solid rgb(196, 194, 194);
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 .forms{

@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="navbar.component.css">
 </head>
-<body>
-    <div class="nav-container">
+<body >
+    <div class="nav-container" [ngClass]="{'darktheme':true}">
         <ul class="list">
             <a href="#">
                 <li>Courses</li>
@@ -36,7 +36,7 @@
         </div>
         <div class="icon-container">
             <a [routerLink]="['search']"><img src="assets\images\searchlogo.png" alt="seach"></a>
-            <img src="assets\images\moon.png" alt="moon">
+            <a href="" (click)="darktheme()" ><img src="assets\images\moon.png" alt="moon" id="moon"></a>
             <img src="assets\images\notification-bell.png" alt="bell">
             <img src="assets\images\translate.png" alt="translate">
             <a [routerLink]="['signin']"><button>Sign In</button></a>
