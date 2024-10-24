@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="form1">
         <div class="formdiv">
-        <form class="forms" >
-            <input type="text" name="username" placeholder="Enter your feedback" id=""  (input)="username.value" #username required>
-            <button value="submit" (click)="click()">submit</button>   
-        </form>
+            <form class="forms">
+                <textarea type="text" name="username" placeholder="Enter your feedback" [(ngModel)]="para"  required> </textarea>
+                <button value="submit" (click)="clickcontainer()" >submit</button>
+            </form>
+        </div>
     </div>
+    <div class="clicklist-container">
+    <div class="clicklist" *ngFor="let clickitem of clicklist; let i=index">
+        <div class="profile"><img src="assets/images/user.png" alt="user"></div>
+        <div class="details" *ngIf="clickstate ">
+            <p>{{paragrapharray[i]}}</p>
+        </div>    
     </div>
-    <div class="details">
-        <h2></h2>
-    </div>
+</div>
     
+
 </body>
+
 </html>
