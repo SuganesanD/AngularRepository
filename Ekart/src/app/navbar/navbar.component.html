@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="navbar.component.css">
 </head>
 <body >
-    <div class="nav-container" [ngClass]="{'darktheme':true}">
+    <div class="nav-container" [ngStyle]="{'background-color' : darkbool ? 'white' : 'black'}">
+        
         <ul class="list">
             <a href="#">
                 <li>Courses</li>
             </a>
+            
             <img src="assets\images\down.png" alt="">
             <a href="#">
                 <li>Tutorials</li>
@@ -36,7 +38,7 @@
         </div>
         <div class="icon-container">
             <a [routerLink]="['search']"><img src="assets\images\searchlogo.png" alt="seach"></a>
-            <a href="" (click)="darktheme()" ><img src="assets\images\moon.png" alt="moon" id="moon"></a>
+            <a  (click)="darktheme()" ><img src="assets\images\moon.png" alt="moon" id="moon"></a>
             <img src="assets\images\notification-bell.png" alt="bell">
             <img src="assets\images\translate.png" alt="translate">
             <a [routerLink]="['signin']"><button>Sign In</button></a>
