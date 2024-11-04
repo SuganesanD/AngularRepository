@@ -1,0 +1,8 @@
+<div class="cardlist">
+    <app-productcard *ngFor="let product of products"
+    [productname]="product.name"
+    [productprice]="product.price"
+    [productdescription]="product.description"
+    [productavailability]="product.availability">
+    </app-productcard> 
+</div>

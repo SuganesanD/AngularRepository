@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular_Components": {
+    "inputoutput_decorator": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-components",
+            "outputPath": "dist/inputoutput_decorator",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Angular_Components:build:production"
+              "browserTarget": "inputoutput_decorator:build:production"
             },
             "development": {
-              "browserTarget": "Angular_Components:build:development"
+              "browserTarget": "inputoutput_decorator:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular_Components:build"
+            "browserTarget": "inputoutput_decorator:build"
           }
         },
         "test": {

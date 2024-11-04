@@ -1,0 +1,11 @@
+.card{
+    text-align: center;
+    height: auto;
+    width: 300px;
+    background-color: rgb(244, 253, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+.card:hover{
+    box-shadow: 5px 5px 10px 5px rgb(226, 226, 226);
+}
