@@ -2,4 +2,5 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Gill Sans;
 }
