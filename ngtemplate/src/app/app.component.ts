@@ -11,4 +11,7 @@ export class AppComponent {
   onclick(){
     this.state=!this.state
   }
+  onsubmit(){
+    alert(`You have successfully "Signed in"!`)
+  }
 }

@@ -42,6 +42,12 @@ button,input{
 input::placeholder{
     padding: 10px;
 }
+
+input:focus{
+    box-shadow: 1px 0px 5px  rgb(247, 144, 144) ;
+    outline: none;
+    border: 1px solid  rgb(253, 114, 114);
+}
 #button1{
     background-color: blueviolet;
     color: white;
