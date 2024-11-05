@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-direction: column ;
+    height: auto;
+    width: 330px;
+    align-items: center; 
+    box-shadow: 2px 5px 10px 5px gray;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.logincondition{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.studentlogin,.stafflogin{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+button,input{
+    width: 85%;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 0px;
+    border: 1px solid rgb(167, 167, 167);
+    padding: 0px;
+    color: rgb(173, 173, 173);
+    
+}
+input::placeholder{
+    padding: 10px;
+}
+#button1{
+    background-color: blueviolet;
+    color: white;
+    opacity: 0.5;
+}
+
+#button1:hover{
+    opacity: 1;  
+}
+#button2{
+    background-color: rgb(58, 58, 252);
+    color: white;
+}
+
+#checked{
+    height: 15px;
+    width: 15px;
+}
+#span{
+    width: 90%;
+}
+p{
+    font-size: 12px;
+}
+
+h1{
+    font-size:24px;
+    font-weight: 400;
+    color:  rgb(58, 58, 252);
+} 

@@ -1,0 +1,33 @@
+<div class="container">
+  <img src="assets/kamarajlogo.jfif" alt="">
+  <ng-template #stafflogin>
+    <div class="stafflogin">
+      <h1>staff login</h1>
+      <input type="text" placeholder="USERNAME">
+      <input type="text" placeholder="PASSWORD">
+      <span id="span"><input type="checkbox" id="checked"><span>Remember Me <a href="">Forget Password?</a></span></span>
+      <button id="button1">Sign in</button>
+    </div>
+  </ng-template>
+
+  <div class="logincondition" *ngIf="state; else stafflogin">
+  <div class="studentlogin">
+    <h1>Kamaraj Digital Club</h1>
+    <input type="text" placeholder="RollNumber">
+    <input type="date" placeholder="Date Of Birth">
+    <button id="button1">Sign in</button>
+    <button id="button2" (click)="onclick()">Staff</button>
+  </div>
+</div>
+
+  <!-- <div class="studentlogin">
+    <h1>kamaraj digital club</h1>
+  <div class="input1"></div>
+  <div class="input2"></div>
+  <div class="button1">
+    <p>Sign in</p>
+  </div>
+  <div class="button2"></div>
+  </div> -->
+  <p>All rights reserved copyright &copy; 2024,<br>Kamaraj College Of Engineering & Technology </p>
+</div>
