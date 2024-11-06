@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    margin-right: 20px;
+   
+}
+.profile{
+    height: 70%;
+    width: 35px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+img{
+    height: 50%;
+    margin: 0px 10px;
+}
+#profile{
+    height: 100%;
+    margin: 0;
+}
