@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ContainerComponent } from '../container.component';
 
 @Component({
   selector: 'app-side-container',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-container.component.css']
 })
 export class SideContainerComponent {
-
+  @Input() listitems:any[]=[];
 }

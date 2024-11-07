@@ -4,10 +4,12 @@
     border: 1px solid rgb(212, 212, 212);
     margin: 20px;
     border-radius: 20px;
+    position: relative;
+    overflow: hidden;
  }
 
  .heading{
-    height: 10%;
+    height: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +22,13 @@
  }
 
 .container .heading p{
-    margin: 5px;
+    margin: 2px;
  }
 
  #h2{
     font-weight: 900;
     font-size: larger;
+    margin: 0px;
  }
 
  .heading img{
@@ -56,4 +59,34 @@
     height: 70%;
  }
 
+ .videocontainer{
+   overflow-y: scroll;
+   position: absolute;
+   height: 77%;
+   
+   
+ }
+ .videofragment{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 320px;
+   overflow: hidden;
+   gap: 5px;
+   padding: 10px;
+   
+ }
+
+ .videofragment:hover{
+   background-color: rgb(220, 220, 235);
+ }
+
+ .videofragment iframe{
+   border-radius: 10px;
+ }
  
+ #content{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }

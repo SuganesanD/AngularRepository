@@ -1,10 +1,13 @@
 <div class="container">
     <div class="heading">
-        <div class="content">
-            <p id="h2">Mastering Angular 16: Build Powerf...
-            </p>
-        <p>procademy 35 / 196</p>
-        </div>
+        <ng-template #content>
+            <div class="content" #content>
+                <p id="h2">Mastering Angular 16: Build Powerf...
+                </p>
+                <p>procademy 35 / 196</p>
+            </div>
+        </ng-template>
+        <div *ngTemplateOutlet="content"></div>
         <img src="assets/images/close.png" alt="">
     </div>
     <div class="logo">
@@ -14,5 +17,15 @@
         </div>
         <img src="assets/images/menudot.png" alt="" id="menudot">
     </div>
-    <div class="videocontainer"></div>
+    <div class="videocontainer">
+        <ng-container *ngFor="let items of listitems;let i=index" id="ngcontainer">
+        <div class="videofragment">  
+            <p>{{i+1}}</p>
+            <iframe height="60" width="100" id="frame" src="https://www.youtube.com/embed/X-vlp3XeJAY?feature=shared"
+                [frameBorder]="0" ></iframe>
+                <p id="content">{{listitems[i].content}}</p>
+        </div>
+    </ng-container>
+    </div>
 </div>
+

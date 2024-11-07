@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video-container',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./video-container.component.css']
 })
 export class VideoContainerComponent {
+  @Input() listitem:any[]=[]
+
+  sanitizedUrls: SafeResourceUrl[] = [];
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  ngOnInit(): void {
+    // Sanitize all video links when the component initializes
+    this.sanitizedUrls = this.listitem.map(item => this.sanitizer.bypassSecurityTrustResourceUrl(item.videoLink));
+  }
 
 }
