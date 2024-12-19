@@ -1,22 +1,25 @@
 import { NgModule } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TicketBookingFormComponent } from './ticket-booking-form/ticket-booking-form.component';
-import { SuggestionPageComponent } from './suggestion-page/suggestion-page.component';
-import { PreviewPageComponent } from './preview-page/preview-page.component';
+import { BillComponent } from './bill/bill.component';
+import { ItemsTableComponent } from './items-table/items-table.component';
+import { RouterModule , Routes} from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TicketBookingFormComponent,
-    SuggestionPageComponent,
-    PreviewPageComponent
+    BillComponent,
+    ItemsTableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
