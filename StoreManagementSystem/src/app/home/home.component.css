@@ -1,0 +1,51 @@
+.paragraph{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    background: linear-gradient(to bottom,rgb(228, 240, 245),white);
+    padding: 20px;
+    
+}
+
+.paragraph p{
+    padding: 0;
+    margin: 0px 40px;
+}
+
+.paragraph h2{
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.Getstarted{
+    height: 60px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 50px;
+    font-size: 18px;
+
+}
+
+.Getstarted:hover{
+    height: 60px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 50px;
+    font-size: 18px;
+
+}
+
+.footer{
+    text-align: center;
+    font-size: 18px;
+   margin-top: 50px;
+    margin-bottom: 0;
+    border-top: 1px solid black;
+}

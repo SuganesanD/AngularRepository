@@ -1,0 +1,19 @@
+table{
+    border: 1px solid rgb(216, 216, 216);
+    border-collapse: collapse;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    
+}
+th{
+    background-color:rgb(83, 127, 231);
+    color: white;
+    padding: 10px;
+}
+td,th{
+    border: 1px solid  rgb(216, 216, 216);   
+}
+h2{
+    margin-left: 2%;
+}

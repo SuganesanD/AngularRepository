@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.navbar img{
+    height: 100px;
+}
+
+.navbar h1{
+    flex: 1;
+    text-align: center;
+}
+#Itemsavailable{
+    height: 60px;
+    background-color:rgb(83, 127, 231);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    margin: 0px 20px;
+}
+
+#Calculator{
+    height: 60px;
+    background-color:rgb(24, 24, 35);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    margin: 0px 20px;
+}
