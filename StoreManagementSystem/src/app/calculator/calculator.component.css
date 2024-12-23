@@ -56,3 +56,60 @@ input{
     margin: 0px 20px;
 
 }
+
+.displayitems{
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+}
+
+.submitdetails{
+    height: auto;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 3px 5px rgb(218, 217, 217);
+    text-align: center;
+    margin-left: 43%;
+}
+
+.submitdetails button:hover{
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+
+.submitdetails button{
+    color: white;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: blue;
+}
+
+table{
+    border: 1px solid rgb(216, 216, 216);
+    border-collapse: collapse;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    
+}
+th{
+    background-color:black;
+    color: white;
+    padding: 10px;
+}
+td,th{
+    border: 1px solid  rgb(216, 216, 216);   
+}
+h2{
+    margin-left: 2%;
+}

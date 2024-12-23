@@ -1,11 +1,108 @@
+<h2>LIST OF PRODUCTS AVAILABLE:</h2>
+<div class="table">
+ <table>
+   <tr>
+   <th>S.NO</th>
+   <th>PRODUCTS</th>
+   <th>PRODUCT ID</th>
+   <th>PRICE</th>
+ </tr>
+ <tr>
+   <td>1</td>
+   <td>Oil</td>
+   <td>5001</td>
+   <td>20</td>
+   
+ </tr>
+ <tr>
+   <td>2</td>
+   <td>Toothpaste</td>
+   <td>5002</td>
+   <td>25</td>
+ </tr>
+ <tr>
+   <td>3</td>
+   <td>Rice</td>
+   <td>5003</td>
+   <td>30</td>
+ </tr>
+ <tr>
+   <td>4</td>
+   <td>Maida</td>
+   <td>5004</td>
+   <td>40</td>
+   
+ </tr>
+ <tr>
+   <td>5</td>
+   <td>Soap</td>
+   <td>5005</td>
+   <td>50</td>
+   
+ </tr>
+
+ <tr>
+   <td>6</td>
+   <td>Shampoo</td>
+   <td>5006</td>
+   <td>45</td>
+ </tr>
+ <tr>
+   <td>7</td>
+   <td>Sugar</td>
+   <td>5007</td>
+   <td>15</td>
+
+ </tr>
+ <tr>
+   <td>8</td>
+   <td>Atta</td>
+   <td>5008</td>
+   <td>48</td>
+   
+ </tr>
+ <tr>
+   <td>9</td>
+   <td>Dishwasher</td>
+   <td>5009</td>
+   <td>37</td>
+   
+ </tr>
+ <tr>
+   <td>10</td>
+   <td>Toilet Cleaner</td>
+   <td>5010</td>
+   <td>38</td>
+
+ </tr>
+ </table>
+</div>
+
+
 <h2>CALCULATOR:</h2>
 <div class="calculatorcontainer">
     <label for="input">ITEM ID:
-        <input type="text" placeholder="enter the item id" [(ngModel)]="Itemid">
+        <input type="text" placeholder="enter the item id" [(ngModel)]="calculator.Itemid">
     </label>
     <label for="input">QUANTITY:
-        <input type="number" placeholder="enter the item quantity" [(ngModel)]="ItemQuantity">
+        <input type="number" placeholder="enter the item quantity" [(ngModel)]="calculator.ItemQuantity">
     </label>
-    <button (click)="addmoreitems()" class="addmoreitems">Add more Items</button>
-    <a routerLink="submit"><button class="proceed" (click)="submit()">Proceed</button></a>
+    <button (click)="addmoreitem()" class="addmoreitems">Add more Items</button>
+    <button class="proceed" (click)="proceed()">Proceed</button>
+</div>
+
+<div class="displayitems" *ngFor="let item of calculator.itemiddetails; let i=index">
+    <p>(Item Id) {{calculator.itemiddetails[i]}} x (Item Quantity) {{calculator.itemquantitydetails[i]}}=(Total Price) {{calculator.itemtotaldetails[i]}}</p>
+
+</div>
+
+<h2>Bill Preview:</h2>
+
+<div class="submitdetails"  *ngIf="boolvalue==true" >
+    <h2>PREVIEW</h2>
+  <div *ngFor="let item of calculator.itemiddetails;let i=index" >
+    <p>ItemId:{{calculator.itemiddetails[i]}} Item Quantity:{{calculator.itemquantitydetails[i]}}</p>  
+  </div>
+  <p>Total Amount:{{calculator.Totalvalue}}</p>
+  <a  routerLink="/bill"><button class="pay" >PAY</button></a>
 </div>

@@ -1,84 +1,29 @@
-    <h2>LIST OF PRODUCTS AVAILABLE:</h2>
- <div class="table">
+<h2>LIST OF PRODUCTS AVAILABLE:</h2>
+
   <table>
-    <tr>
-    <th>S.NO</th>
-    <th>PRODUCTS</th>
-    <th>PRODUCT ID</th>
-    <th>PRICE</th>
-    <th>DISCOUNT</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Oil</td>
-    <td>5001</td>
-    <td>20</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Toothpaste</td>
-    <td>5002</td>
-    <td>25</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Rice</td>
-    <td>5003</td>
-    <td>30</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Maida</td>
-    <td>5004</td>
-    <td>40</td>
-    <td>20%</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Soap</td>
-    <td>5005</td>
-    <td>50</td>
-    <td>20%</td>
-  </tr>
+    <tr >
+      <th>S.NO</th>
+      <th>PRODUCTS</th>
+      <th>PRODUCT ID</th>
+      <th>PRICE</th>
+      <th>DISCOUNT %</th>
+    </tr>
+        <tr  *ngFor="let product of productname;let i =index">
+          <td>{{[i+1]}}</td>
+          <td>{{productname[i]}}</td>
+          <td>{{productid[i]}}</td>
+          <td>{{productprice[i]}}</td>
+          <td>{{productdiscount[i]}}</td>
+        </tr>
+</table>
+<div class="additemcontainer">
+  <button (click)="additem()" class="additem">Add Item</button>
+</div>
 
-  <tr>
-    <td>6</td>
-    <td>Shampoo</td>
-    <td>5006</td>
-    <td>45</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Sugar</td>
-    <td>5007</td>
-    <td>15</td>
-    <td>5%</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>Atta</td>
-    <td>5008</td>
-    <td>48</td>
-    <td>30%</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>Dishwasher</td>
-    <td>5009</td>
-    <td>37</td>
-    <td>23%</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Toilet Cleaner</td>
-    <td>5010</td>
-    <td>38</td>
-    <td>5%</td>
-  </tr>
-  </table>
- </div>
-
+<div class="addnewitem" *ngIf="displayvalue==true">
+  <p>PRODUCT NAME:<input type="text" [(ngModel)]="Productname"></p>
+  <p>PRODUCT ID:<input type="number" [(ngModel)]="Productid"></p>
+  <p>PRICE:<input type="number" [(ngModel)]="Productprice"></p>
+  <p>DISCOUNT:<input type="text" [(ngModel)]="Productdiscount"></p>
+  <button (click)="add()" class="add">+</button>
+</div>

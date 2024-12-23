@@ -6,6 +6,7 @@ import { TableComponent } from './table/table.component';
 import { BillComponent } from './bill/bill.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:"calculator",component:CalculatorComponent},
   {path:"table",component:TableComponent},
   {path:"bill",component:BillComponent}

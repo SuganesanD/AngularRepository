@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { CalculationsService } from '../calculations.service';
+import { CalculatorComponent } from '../calculator/calculator.component';
+
 
 @Component({
   selector: 'app-bill',
@@ -6,6 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./bill.component.css']
 })
 export class BillComponent {
-
 
 }

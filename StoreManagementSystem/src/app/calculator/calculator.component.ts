@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalculationsService } from '../calculations.service';
 
 @Component({
   selector: 'app-calculator',
@@ -6,13 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
-  Itemid:number=0
-  ItemQuantity:number=0
+  boolvalue:boolean=false;
 
-  addmoreitems(){
-
-
+  calculator=new CalculationsService
+  addmoreitem(){
+    this.calculator.addmoreitems()
   }
-  submit(){}
 
+  proceed(){
+    this.boolvalue=true
+  }
+
+  
+ 
 }
