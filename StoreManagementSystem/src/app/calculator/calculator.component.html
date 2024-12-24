@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <h2>LIST OF PRODUCTS AVAILABLE:</h2>
 <div class="table">
  <table>
@@ -6,74 +7,14 @@
    <th>PRODUCTS</th>
    <th>PRODUCT ID</th>
    <th>PRICE</th>
+   <th>DISCOUNT</th>
  </tr>
- <tr>
-   <td>1</td>
-   <td>Oil</td>
-   <td>5001</td>
-   <td>20</td>
-   
- </tr>
- <tr>
-   <td>2</td>
-   <td>Toothpaste</td>
-   <td>5002</td>
-   <td>25</td>
- </tr>
- <tr>
-   <td>3</td>
-   <td>Rice</td>
-   <td>5003</td>
-   <td>30</td>
- </tr>
- <tr>
-   <td>4</td>
-   <td>Maida</td>
-   <td>5004</td>
-   <td>40</td>
-   
- </tr>
- <tr>
-   <td>5</td>
-   <td>Soap</td>
-   <td>5005</td>
-   <td>50</td>
-   
- </tr>
-
- <tr>
-   <td>6</td>
-   <td>Shampoo</td>
-   <td>5006</td>
-   <td>45</td>
- </tr>
- <tr>
-   <td>7</td>
-   <td>Sugar</td>
-   <td>5007</td>
-   <td>15</td>
-
- </tr>
- <tr>
-   <td>8</td>
-   <td>Atta</td>
-   <td>5008</td>
-   <td>48</td>
-   
- </tr>
- <tr>
-   <td>9</td>
-   <td>Dishwasher</td>
-   <td>5009</td>
-   <td>37</td>
-   
- </tr>
- <tr>
-   <td>10</td>
-   <td>Toilet Cleaner</td>
-   <td>5010</td>
-   <td>38</td>
-
+ <tr *ngFor="let item of calculator.product ;let i=index">
+   <td>{{i+1}}</td>
+   <td>{{calculator.product[i].productname}}</td>
+   <td>{{calculator.product[i].productid}}</td>
+   <td>{{calculator.product[i].productprice}}</td>
+   <td>{{calculator.product[i].productdiscount}}</td>
  </tr>
  </table>
 </div>
@@ -87,22 +28,26 @@
     <label for="input">QUANTITY:
         <input type="number" placeholder="enter the item quantity" [(ngModel)]="calculator.ItemQuantity">
     </label>
-    <button (click)="addmoreitem()" class="addmoreitems">Add more Items</button>
-    <button class="proceed" (click)="proceed()">Proceed</button>
+    <button (click)="calculator.addmoreitems()" class="addmoreitems">Add more Items</button>
+    <button class="proceed" (click)="calculator.proceed()">Proceed</button>
 </div>
 
+<div *ngIf="calculator.addmoreitem==true">
+  <h2>Items added to cart</h2>
 <div class="displayitems" *ngFor="let item of calculator.itemiddetails; let i=index">
     <p>(Item Id) {{calculator.itemiddetails[i]}} x (Item Quantity) {{calculator.itemquantitydetails[i]}}=(Total Price) {{calculator.itemtotaldetails[i]}}</p>
-
+</div>
 </div>
 
+<div *ngIf="calculator.boolvalue==true">
 <h2>Bill Preview:</h2>
-
-<div class="submitdetails"  *ngIf="boolvalue==true" >
+<div class="submitdetails"   >
     <h2>PREVIEW</h2>
   <div *ngFor="let item of calculator.itemiddetails;let i=index" >
-    <p>ItemId:{{calculator.itemiddetails[i]}} Item Quantity:{{calculator.itemquantitydetails[i]}}</p>  
+    <p>Item Id:{{calculator.itemiddetails[i]}} Item Quantity:{{calculator.itemquantitydetails[i]}}</p>  
   </div>
   <p>Total Amount:{{calculator.Totalvalue}}</p>
   <a  routerLink="/bill"><button class="pay" >PAY</button></a>
+</div>
+
 </div>

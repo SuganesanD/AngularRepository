@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <h2>LIST OF PRODUCTS AVAILABLE:</h2>
 
   <table>
@@ -7,23 +8,34 @@
       <th>PRODUCT ID</th>
       <th>PRICE</th>
       <th>DISCOUNT %</th>
+      <th>Stock Available</th>
     </tr>
-        <tr  *ngFor="let product of productname;let i =index">
+        <tr  *ngFor="let product of table.product;let i =index">
           <td>{{[i+1]}}</td>
-          <td>{{productname[i]}}</td>
-          <td>{{productid[i]}}</td>
-          <td>{{productprice[i]}}</td>
-          <td>{{productdiscount[i]}}</td>
+          <td>{{table.product[i].productname}}</td>
+          <td>{{ table.product[i].productid}}</td>
+          <td>{{ table.product[i].productprice}}</td>
+          <td>{{ table.product[i].productdiscount}}</td>
+          <td>{{table.product[i].productstock}}</td>
         </tr>
 </table>
 <div class="additemcontainer">
-  <button (click)="additem()" class="additem">Add Item</button>
+  <button (click)="table.additem()" class="additem">Add Item</button>
+  <button (click)="table.restockbutton()"class="restock">Restock</button>
 </div>
 
-<div class="addnewitem" *ngIf="displayvalue==true">
-  <p>PRODUCT NAME:<input type="text" [(ngModel)]="Productname"></p>
-  <p>PRODUCT ID:<input type="number" [(ngModel)]="Productid"></p>
-  <p>PRICE:<input type="number" [(ngModel)]="Productprice"></p>
-  <p>DISCOUNT:<input type="text" [(ngModel)]="Productdiscount"></p>
-  <button (click)="add()" class="add">+</button>
+<div class="restockcontainer" *ngIf="table.restockvalue==true">
+  <p>PRODUCT ID:<input type="number" [(ngModel)]="table.Productid"></p>
+  <p>ADD STOCK:<input type="number" [(ngModel)]="table.Productstock"></p>
+  <button (click)="table.restock()" class="restockbutton">Add Stock</button>
+</div>
+
+<div class="addnewitem" *ngIf="table.displayvalue==true">
+  <p>PRODUCT NAME:<input type="text" [(ngModel)]="table.Productname"></p>
+  <p>PRODUCT ID:<input type="number" [(ngModel)]="table.Productid"></p>
+  <p>PRICE:<input type="number" [(ngModel)]="table.Productprice"></p>
+  <p>DISCOUNT:<input type="number" [(ngModel)]="table.Productdiscount"></p>
+  <p>Stock:<input type="number"[(ngModel)]="table.Productstock"></p>
+  <button (click)="table.add()" class="add">+</button>
+  
 </div>

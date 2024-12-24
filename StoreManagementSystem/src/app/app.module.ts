@@ -9,6 +9,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { TableComponent } from './table/table.component';
 import { BillComponent } from './bill/bill.component';
 import { FormsModule } from '@angular/forms';
+import { CalculationsService } from './calculations.service';
+import { LoginComponent } from './login/login.component';
+import { FirstnavbarComponent } from './firstnavbar/firstnavbar.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +21,17 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     CalculatorComponent,
     TableComponent,
-    BillComponent
+    BillComponent,
+    LoginComponent,
+    FirstnavbarComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CalculationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

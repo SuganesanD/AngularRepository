@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CalculationsService } from '../calculations.service';
 
 @Component({
@@ -7,17 +7,6 @@ import { CalculationsService } from '../calculations.service';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
-  boolvalue:boolean=false;
 
-  calculator=new CalculationsService
-  addmoreitem(){
-    this.calculator.addmoreitems()
-  }
-
-  proceed(){
-    this.boolvalue=true
-  }
-
-  
- 
+  calculator:CalculationsService=inject(CalculationsService);
 }

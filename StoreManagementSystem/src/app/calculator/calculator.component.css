@@ -71,9 +71,11 @@ input{
     height: auto;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 2px 0px 3px 5px rgb(218, 217, 217);
+    border: 1px solid rgb(155, 155, 250);
+   padding: 20px;
     text-align: center;
     margin-left: 43%;
+    margin-bottom: 50px;
 }
 
 .submitdetails button:hover{
@@ -92,6 +94,10 @@ input{
     padding: 5px;
     margin: 5px;
     background-color: blue;
+}
+
+.submitdetails p{
+    font-weight: 600;
 }
 
 table{
