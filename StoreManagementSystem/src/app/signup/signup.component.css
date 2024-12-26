@@ -43,3 +43,21 @@ button{
 
 }
 
+#checkbox{
+    margin: 0px;
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+}
+
+span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+span label{
+    font-size: 14px;
+}
+

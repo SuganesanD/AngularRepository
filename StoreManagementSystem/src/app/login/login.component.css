@@ -1,0 +1,65 @@
+
+.signupcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 26px;
+    background-color:rgb(224, 223, 223);
+    
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    width: auto;
+  
+}
+input{
+    margin-bottom: 30px;
+    height: 30px;
+    width: 400px;
+    border: none;
+    background-color: rgb(173, 173, 173);
+    text-align: center;
+}
+input::placeholder{
+    color: rgb(73, 73, 73);
+
+}
+
+button{
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    color: white;
+
+}
+
+#checkbox{
+    margin: 0px;
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+}
+
+span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+span label{
+    font-size: 14px;
+}
+

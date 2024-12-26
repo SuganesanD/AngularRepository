@@ -1,9 +1,12 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CalculationsService {
+
+  loginrouter:Router=inject(Router);
 
   constructor() { }
 
@@ -158,5 +161,63 @@ export class CalculationsService {
     }
 
   }
+
+
+  name:string=''
+  newpassword:any=''
+  password:any=''
+  checkboxvalue:string="text";
+  checkboxbool:boolean=false;
+  loginname:string=''
+  loginpassword:any
+  flag:number=0
+
+  user:{username:string,userpassword:any}[]=
+  [
+    {username:"sugu",userpassword:123}
+    
+  ];
+
+  signup(){
+    if(this.newpassword==this.password){
+      alert(`Thankyou ${this.name} for your signup with us!Enjoy our services`)
+      this.user.push({username:this.name,userpassword:this.password})
+      console.log(this.user);
+      
+      
+    }
+    else{
+      alert("OOPS!!!Your password is not matching");
+    }
+  }
+
+
+  login(){  
+    for(let i=0;i<this.user.length;i++){  
+      if((this.user[i].username==this.loginname)&&( this.user[i].userpassword==this.loginpassword)){
+        alert("you are successfully logged in")
+        this.loginname=''
+        this.loginpassword=''
+        this.flag=1
+        break;
+      }
+      else{
+        this.flag=0
+      }
+    }
+    if(this.flag==1){
+      this.loginrouter.navigate(['/calculator']);
+    }
+
+    else{
+      alert("Invalid username or password.Don't have account!Sign up to enjoy our services")
+      this.loginrouter.navigate(['/signup'])
+      this.loginname=''
+      this.loginpassword=''
+    }
+
+  }
+
+  
 
 }

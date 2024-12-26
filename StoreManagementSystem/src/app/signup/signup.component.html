@@ -1,8 +1,9 @@
 <div class="signupcontainer">
     <div class="container">
-    <label>Name</label><input type="text" placeholder="Enter your name">
-    <label>New Password</label><input type="text" placeholder="Enter the new Password">
-    <label>Confirm Password</label><input type="text" placeholder="Confirm the Password ">
-    <button>Sign up</button>
+    <label>Name</label><input type="text" placeholder="Enter your name" [(ngModel)]="signup.name">
+    <label>New Password</label><input [type]="signup.checkboxbool ? 'text' : 'password'" placeholder="Enter the new Password" [(ngModel)]="signup.newpassword">
+    <label>Confirm Password</label><input [type]="signup.checkboxbool ? 'text' : 'password'" placeholder="Confirm the Password "[(ngModel)]="signup.password">
+    <span><input type="checkbox" id="checkbox" [(ngModel)]="signup.checkboxbool"><label >Show password</label></span>
+    <button routerLink="/login" (click)="signup.signup()">Sign up</button>
 </div>
 </div>

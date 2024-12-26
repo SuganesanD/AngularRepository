@@ -1,2 +1,8 @@
-<app-firstnavbar></app-firstnavbar>
-<p>login works!</p>
+<div class="signupcontainer">
+    <div class="container">
+    <label>Username</label><input type="text" placeholder="Enter your name" [(ngModel)]="login.loginname">
+    <label>Password</label><input [type]="login.checkboxbool ? 'text' : 'password'" placeholder="Enter the Password "[(ngModel)]="login.loginpassword">
+    <span><input type="checkbox" id="checkbox" [(ngModel)]="login.checkboxbool"><label >Show password</label></span>
+    <button (click)="login.login()">Login</button>
+</div>
+</div>
