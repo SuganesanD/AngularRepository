@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "pdfjs-dist": "^4.9.155",
+    "zone.js": "^0.14.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.0.6"
+  }
+}
